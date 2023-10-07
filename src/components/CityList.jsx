@@ -3,12 +3,12 @@ import Spinner from "./Spinner";
 import CityItem from "./CityItem";
 import Message from "./Message";
 
-function CityList({ isLoading, cities }) {
+function CityList({ cities, isLoading }) {
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
     return (
-      <Message message="Addd your first city by clicking  on a city on the map" />
+      <Message message="Addd your first city by clicking on a city on the map" />
     );
 
   return (
