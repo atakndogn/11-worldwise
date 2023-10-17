@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import styles from "./City.module.css";
 
 const formatDate = (date) =>
@@ -9,7 +10,8 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 function City() {
-  // TEMP DATA
+  const { id } = useParams();
+
   const currentCity = {
     cityName: "Lisbon",
     emoji: "🇵🇹",
@@ -19,6 +21,12 @@ function City() {
 
   const { cityName, emoji, date, notes } = currentCity;
 
+  return (
+    <h1>
+      {cityName} - {id}
+    </h1>
+  );
+  /*
   return (
     <div className={styles.city}>
       <div className={styles.row}>
@@ -51,11 +59,10 @@ function City() {
         </a>
       </div>
 
-      <div>
-        <ButtonBack />
-      </div>
+      <div></div>
     </div>
   );
+  */
 }
 
 export default City;
