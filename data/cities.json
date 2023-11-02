@@ -37,14 +37,14 @@
       "id": 98443201
     },
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2023-11-01T11:33:08.245Z",
-      "notes": "new lisbon",
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-11-02T02:42:28.900Z",
+      "notes": "",
       "position": {
-        "lat": "38.70265930723801",
-        "lng": "-9.140625000000002"
+        "lat": "51.50874245880335",
+        "lng": "-0.15380859375000003"
       },
       "id": 98443202
     }
